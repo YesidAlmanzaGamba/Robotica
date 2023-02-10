@@ -1,2 +1,0 @@
-# Robotica
-Proyecto de Robotica

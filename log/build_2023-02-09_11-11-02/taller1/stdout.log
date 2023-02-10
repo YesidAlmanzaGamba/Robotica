@@ -1,0 +1,31 @@
+running egg_info
+creating ../../build/taller1/taller1.egg-info
+writing ../../build/taller1/taller1.egg-info/PKG-INFO
+writing dependency_links to ../../build/taller1/taller1.egg-info/dependency_links.txt
+writing entry points to ../../build/taller1/taller1.egg-info/entry_points.txt
+writing requirements to ../../build/taller1/taller1.egg-info/requires.txt
+writing top-level names to ../../build/taller1/taller1.egg-info/top_level.txt
+writing manifest file '../../build/taller1/taller1.egg-info/SOURCES.txt'
+reading manifest file '../../build/taller1/taller1.egg-info/SOURCES.txt'
+writing manifest file '../../build/taller1/taller1.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/yesid/Robotica/build/taller1/build
+creating /home/yesid/Robotica/build/taller1/build/lib
+creating /home/yesid/Robotica/build/taller1/build/lib/taller1
+copying taller1/__init__.py -> /home/yesid/Robotica/build/taller1/build/lib/taller1
+running install
+running install_lib
+creating /home/yesid/Robotica/install/taller1/lib/python3.10/site-packages/taller1
+copying /home/yesid/Robotica/build/taller1/build/lib/taller1/__init__.py -> /home/yesid/Robotica/install/taller1/lib/python3.10/site-packages/taller1
+byte-compiling /home/yesid/Robotica/install/taller1/lib/python3.10/site-packages/taller1/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/yesid/Robotica/install/taller1/share/ament_index
+creating /home/yesid/Robotica/install/taller1/share/ament_index/resource_index
+creating /home/yesid/Robotica/install/taller1/share/ament_index/resource_index/packages
+copying resource/taller1 -> /home/yesid/Robotica/install/taller1/share/ament_index/resource_index/packages
+copying package.xml -> /home/yesid/Robotica/install/taller1/share/taller1
+running install_egg_info
+Copying ../../build/taller1/taller1.egg-info to /home/yesid/Robotica/install/taller1/lib/python3.10/site-packages/taller1-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/yesid/Robotica/build/taller1/install.log'

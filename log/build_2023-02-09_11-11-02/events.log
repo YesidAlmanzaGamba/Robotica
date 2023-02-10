@@ -1,0 +1,105 @@
+[0.000000] (-) TimerEvent: {}
+[0.000149] (my_taller1) JobQueued: {'identifier': 'my_taller1', 'dependencies': OrderedDict()}
+[0.000213] (taller1) JobQueued: {'identifier': 'taller1', 'dependencies': OrderedDict()}
+[0.000236] (my_taller1) JobStarted: {'identifier': 'my_taller1'}
+[0.014045] (taller1) JobStarted: {'identifier': 'taller1'}
+[0.099159] (-) TimerEvent: {}
+[0.199529] (-) TimerEvent: {}
+[0.299830] (-) TimerEvent: {}
+[0.400104] (-) TimerEvent: {}
+[0.500428] (-) TimerEvent: {}
+[0.600694] (-) TimerEvent: {}
+[0.700939] (-) TimerEvent: {}
+[0.801302] (-) TimerEvent: {}
+[0.901564] (-) TimerEvent: {}
+[1.001834] (-) TimerEvent: {}
+[1.096955] (my_taller1) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/my_taller1', 'build', '--build-base', '/home/yesid/Robotica/build/my_taller1/build', 'install', '--record', '/home/yesid/Robotica/build/my_taller1/install.log', '--single-version-externally-managed'], 'cwd': '/home/yesid/Robotica/src/my_taller1', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'es_CO:es', 'USER': 'yesid', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/yesid', 'OLDPWD': '/home/yesid/Robotica/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3005', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/yesid/Robotica/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'yesid', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'yesid', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/yesid-HP-Pavilion-Gaming-Laptop-15-dk0xxx:@/tmp/.ICE-unix/1786,unix/yesid-HP-Pavilion-Gaming-Laptop-15-dk0xxx:/tmp/.ICE-unix/1786', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ea43fa8d_eff2_4ccb_8848_e655784b3a87', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'es_CO.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.T07A01', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.100', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/yesid/Robotica/install/taller1:/home/yesid/Robotica/install/my_taller1:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/yesid/Robotica/build/my_taller1', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/yesid/Robotica/build/my_taller1/prefix_override:/home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages:/home/yesid/Robotica/install/taller1/lib/python3.10/site-packages:/home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[1.101917] (-) TimerEvent: {}
+[1.130320] (taller1) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/taller1', 'build', '--build-base', '/home/yesid/Robotica/build/taller1/build', 'install', '--record', '/home/yesid/Robotica/build/taller1/install.log', '--single-version-externally-managed'], 'cwd': '/home/yesid/Robotica/src/taller1', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'es_CO:es', 'USER': 'yesid', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/yesid', 'OLDPWD': '/home/yesid/Robotica/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3005', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/yesid/Robotica/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'yesid', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'yesid', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/yesid-HP-Pavilion-Gaming-Laptop-15-dk0xxx:@/tmp/.ICE-unix/1786,unix/yesid-HP-Pavilion-Gaming-Laptop-15-dk0xxx:/tmp/.ICE-unix/1786', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ea43fa8d_eff2_4ccb_8848_e655784b3a87', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'es_CO.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.T07A01', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.100', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/yesid/Robotica/install/taller1:/home/yesid/Robotica/install/my_taller1:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/yesid/Robotica/build/taller1', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/yesid/Robotica/build/taller1/prefix_override:/home/yesid/Robotica/install/taller1/lib/python3.10/site-packages:/home/yesid/Robotica/install/taller1/lib/python3.10/site-packages:/home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[1.202025] (-) TimerEvent: {}
+[1.302356] (-) TimerEvent: {}
+[1.364419] (my_taller1) StdoutLine: {'line': b'running egg_info\n'}
+[1.365170] (my_taller1) StdoutLine: {'line': b'creating ../../build/my_taller1/my_taller1.egg-info\n'}
+[1.365548] (my_taller1) StdoutLine: {'line': b'writing ../../build/my_taller1/my_taller1.egg-info/PKG-INFO\n'}
+[1.365874] (my_taller1) StdoutLine: {'line': b'writing dependency_links to ../../build/my_taller1/my_taller1.egg-info/dependency_links.txt\n'}
+[1.366092] (my_taller1) StdoutLine: {'line': b'writing entry points to ../../build/my_taller1/my_taller1.egg-info/entry_points.txt\n'}
+[1.366317] (my_taller1) StdoutLine: {'line': b'writing requirements to ../../build/my_taller1/my_taller1.egg-info/requires.txt\n'}
+[1.366471] (my_taller1) StdoutLine: {'line': b'writing top-level names to ../../build/my_taller1/my_taller1.egg-info/top_level.txt\n'}
+[1.366749] (my_taller1) StdoutLine: {'line': b"writing manifest file '../../build/my_taller1/my_taller1.egg-info/SOURCES.txt'\n"}
+[1.368736] (my_taller1) StdoutLine: {'line': b"reading manifest file '../../build/my_taller1/my_taller1.egg-info/SOURCES.txt'\n"}
+[1.369601] (my_taller1) StdoutLine: {'line': b"writing manifest file '../../build/my_taller1/my_taller1.egg-info/SOURCES.txt'\n"}
+[1.369910] (my_taller1) StdoutLine: {'line': b'running build\n'}
+[1.370086] (my_taller1) StdoutLine: {'line': b'running build_py\n'}
+[1.370422] (my_taller1) StdoutLine: {'line': b'creating /home/yesid/Robotica/build/my_taller1/build\n'}
+[1.370618] (my_taller1) StdoutLine: {'line': b'creating /home/yesid/Robotica/build/my_taller1/build/lib\n'}
+[1.370802] (my_taller1) StdoutLine: {'line': b'creating /home/yesid/Robotica/build/my_taller1/build/lib/my_taller1\n'}
+[1.370963] (my_taller1) StdoutLine: {'line': b'copying my_taller1/keyboard_teleop_hold.py -> /home/yesid/Robotica/build/my_taller1/build/lib/my_taller1\n'}
+[1.371185] (my_taller1) StdoutLine: {'line': b'copying my_taller1/__init__.py -> /home/yesid/Robotica/build/my_taller1/build/lib/my_taller1\n'}
+[1.371445] (my_taller1) StdoutLine: {'line': b'copying my_taller1/teleop.py -> /home/yesid/Robotica/build/my_taller1/build/lib/my_taller1\n'}
+[1.371562] (my_taller1) StdoutLine: {'line': b'copying my_taller1/nodo1.py -> /home/yesid/Robotica/build/my_taller1/build/lib/my_taller1\n'}
+[1.371701] (my_taller1) StdoutLine: {'line': b'copying my_taller1/nodo_movement.py -> /home/yesid/Robotica/build/my_taller1/build/lib/my_taller1\n'}
+[1.371919] (my_taller1) StdoutLine: {'line': b'running install\n'}
+[1.372103] (my_taller1) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[1.372233] (my_taller1) StderrLine: {'line': b'  warnings.warn(\n'}
+[1.372480] (my_taller1) StdoutLine: {'line': b'running install_lib\n'}
+[1.373393] (my_taller1) StdoutLine: {'line': b'creating /home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1\n'}
+[1.373673] (my_taller1) StdoutLine: {'line': b'copying /home/yesid/Robotica/build/my_taller1/build/lib/my_taller1/keyboard_teleop_hold.py -> /home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1\n'}
+[1.373832] (my_taller1) StdoutLine: {'line': b'copying /home/yesid/Robotica/build/my_taller1/build/lib/my_taller1/__init__.py -> /home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1\n'}
+[1.373973] (my_taller1) StdoutLine: {'line': b'copying /home/yesid/Robotica/build/my_taller1/build/lib/my_taller1/teleop.py -> /home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1\n'}
+[1.374107] (my_taller1) StdoutLine: {'line': b'copying /home/yesid/Robotica/build/my_taller1/build/lib/my_taller1/nodo1.py -> /home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1\n'}
+[1.374224] (my_taller1) StdoutLine: {'line': b'copying /home/yesid/Robotica/build/my_taller1/build/lib/my_taller1/nodo_movement.py -> /home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1\n'}
+[1.374618] (my_taller1) StdoutLine: {'line': b'byte-compiling /home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1/keyboard_teleop_hold.py to keyboard_teleop_hold.cpython-310.pyc\n'}
+[1.375417] (my_taller1) StdoutLine: {'line': b'byte-compiling /home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1/__init__.py to __init__.cpython-310.pyc\n'}
+[1.375621] (my_taller1) StdoutLine: {'line': b'byte-compiling /home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1/teleop.py to teleop.cpython-310.pyc\n'}
+[1.376319] (my_taller1) StdoutLine: {'line': b'byte-compiling /home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1/nodo1.py to nodo1.cpython-310.pyc\n'}
+[1.376991] (my_taller1) StdoutLine: {'line': b'byte-compiling /home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1/nodo_movement.py to nodo_movement.cpython-310.pyc\n'}
+[1.377574] (my_taller1) StdoutLine: {'line': b'running install_data\n'}
+[1.378175] (my_taller1) StdoutLine: {'line': b'creating /home/yesid/Robotica/install/my_taller1/share/ament_index\n'}
+[1.378666] (my_taller1) StdoutLine: {'line': b'creating /home/yesid/Robotica/install/my_taller1/share/ament_index/resource_index\n'}
+[1.378754] (my_taller1) StdoutLine: {'line': b'creating /home/yesid/Robotica/install/my_taller1/share/ament_index/resource_index/packages\n'}
+[1.378826] (my_taller1) StdoutLine: {'line': b'copying resource/my_taller1 -> /home/yesid/Robotica/install/my_taller1/share/ament_index/resource_index/packages\n'}
+[1.378894] (my_taller1) StdoutLine: {'line': b'copying package.xml -> /home/yesid/Robotica/install/my_taller1/share/my_taller1\n'}
+[1.378960] (my_taller1) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.380388] (my_taller1) StdoutLine: {'line': b'Copying ../../build/my_taller1/my_taller1.egg-info to /home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1-0.0.0-py3.10.egg-info\n'}
+[1.381283] (my_taller1) StdoutLine: {'line': b'running install_scripts\n'}
+[1.396385] (taller1) StdoutLine: {'line': b'running egg_info\n'}
+[1.396973] (taller1) StdoutLine: {'line': b'creating ../../build/taller1/taller1.egg-info\n'}
+[1.397462] (taller1) StdoutLine: {'line': b'writing ../../build/taller1/taller1.egg-info/PKG-INFO\n'}
+[1.397801] (taller1) StdoutLine: {'line': b'writing dependency_links to ../../build/taller1/taller1.egg-info/dependency_links.txt\n'}
+[1.398061] (taller1) StdoutLine: {'line': b'writing entry points to ../../build/taller1/taller1.egg-info/entry_points.txt\n'}
+[1.398309] (taller1) StdoutLine: {'line': b'writing requirements to ../../build/taller1/taller1.egg-info/requires.txt\n'}
+[1.398471] (taller1) StdoutLine: {'line': b'writing top-level names to ../../build/taller1/taller1.egg-info/top_level.txt\n'}
+[1.398602] (taller1) StdoutLine: {'line': b"writing manifest file '../../build/taller1/taller1.egg-info/SOURCES.txt'\n"}
+[1.400457] (taller1) StdoutLine: {'line': b"reading manifest file '../../build/taller1/taller1.egg-info/SOURCES.txt'\n"}
+[1.401102] (taller1) StdoutLine: {'line': b"writing manifest file '../../build/taller1/taller1.egg-info/SOURCES.txt'\n"}
+[1.401353] (taller1) StdoutLine: {'line': b'running build\n'}
+[1.401669] (taller1) StdoutLine: {'line': b'running build_py\n'}
+[1.401749] (taller1) StdoutLine: {'line': b'creating /home/yesid/Robotica/build/taller1/build\n'}
+[1.401830] (taller1) StdoutLine: {'line': b'creating /home/yesid/Robotica/build/taller1/build/lib\n'}
+[1.401929] (taller1) StdoutLine: {'line': b'creating /home/yesid/Robotica/build/taller1/build/lib/taller1\n'}
+[1.402004] (taller1) StdoutLine: {'line': b'copying taller1/__init__.py -> /home/yesid/Robotica/build/taller1/build/lib/taller1\n'}
+[1.402076] (taller1) StdoutLine: {'line': b'running install\n'}
+[1.402195] (taller1) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[1.402286] (taller1) StderrLine: {'line': b'  warnings.warn(\n'}
+[1.402358] (-) TimerEvent: {}
+[1.402496] (taller1) StdoutLine: {'line': b'running install_lib\n'}
+[1.403177] (taller1) StdoutLine: {'line': b'creating /home/yesid/Robotica/install/taller1/lib/python3.10/site-packages/taller1\n'}
+[1.403288] (taller1) StdoutLine: {'line': b'copying /home/yesid/Robotica/build/taller1/build/lib/taller1/__init__.py -> /home/yesid/Robotica/install/taller1/lib/python3.10/site-packages/taller1\n'}
+[1.403752] (taller1) StdoutLine: {'line': b'byte-compiling /home/yesid/Robotica/install/taller1/lib/python3.10/site-packages/taller1/__init__.py to __init__.cpython-310.pyc\n'}
+[1.403937] (taller1) StdoutLine: {'line': b'running install_data\n'}
+[1.404460] (my_taller1) StdoutLine: {'line': b'Installing nodo1 script to /home/yesid/Robotica/install/my_taller1/lib/my_taller1\n'}
+[1.404657] (taller1) StdoutLine: {'line': b'creating /home/yesid/Robotica/install/taller1/share/ament_index\n'}
+[1.404849] (taller1) StdoutLine: {'line': b'creating /home/yesid/Robotica/install/taller1/share/ament_index/resource_index\n'}
+[1.404923] (taller1) StdoutLine: {'line': b'creating /home/yesid/Robotica/install/taller1/share/ament_index/resource_index/packages\n'}
+[1.404993] (taller1) StdoutLine: {'line': b'copying resource/taller1 -> /home/yesid/Robotica/install/taller1/share/ament_index/resource_index/packages\n'}
+[1.405062] (taller1) StdoutLine: {'line': b'copying package.xml -> /home/yesid/Robotica/install/taller1/share/taller1\n'}
+[1.405184] (my_taller1) StdoutLine: {'line': b"writing list of installed files to '/home/yesid/Robotica/build/my_taller1/install.log'\n"}
+[1.405274] (taller1) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.406650] (taller1) StdoutLine: {'line': b'Copying ../../build/taller1/taller1.egg-info to /home/yesid/Robotica/install/taller1/lib/python3.10/site-packages/taller1-0.0.0-py3.10.egg-info\n'}
+[1.407487] (taller1) StdoutLine: {'line': b'running install_scripts\n'}
+[1.430652] (taller1) StdoutLine: {'line': b"writing list of installed files to '/home/yesid/Robotica/build/taller1/install.log'\n"}
+[1.434728] (my_taller1) CommandEnded: {'returncode': 0}
+[1.450878] (my_taller1) JobEnded: {'identifier': 'my_taller1', 'rc': 0}
+[1.461533] (taller1) CommandEnded: {'returncode': 0}
+[1.468544] (taller1) JobEnded: {'identifier': 'taller1', 'rc': 0}
+[1.469419] (-) EventReactorShutdown: {}

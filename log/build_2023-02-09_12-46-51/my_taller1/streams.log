@@ -1,0 +1,23 @@
+[1.118s] Invoking command in '/home/yesid/Robotica/src/my_taller1': PYTHONPATH=/home/yesid/Robotica/build/my_taller1/prefix_override:/home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_taller1 build --build-base /home/yesid/Robotica/build/my_taller1/build install --record /home/yesid/Robotica/build/my_taller1/install.log --single-version-externally-managed
+[1.385s] running egg_info
+[1.386s] writing ../../build/my_taller1/my_taller1.egg-info/PKG-INFO
+[1.386s] writing dependency_links to ../../build/my_taller1/my_taller1.egg-info/dependency_links.txt
+[1.387s] writing entry points to ../../build/my_taller1/my_taller1.egg-info/entry_points.txt
+[1.387s] writing requirements to ../../build/my_taller1/my_taller1.egg-info/requires.txt
+[1.387s] writing top-level names to ../../build/my_taller1/my_taller1.egg-info/top_level.txt
+[1.389s] reading manifest file '../../build/my_taller1/my_taller1.egg-info/SOURCES.txt'
+[1.390s] writing manifest file '../../build/my_taller1/my_taller1.egg-info/SOURCES.txt'
+[1.390s] running build
+[1.390s] running build_py
+[1.391s] running install
+[1.391s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.391s]   warnings.warn(
+[1.392s] running install_lib
+[1.393s] running install_data
+[1.394s] running install_egg_info
+[1.396s] removing '/home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1-0.0.0-py3.10.egg-info' (and everything under it)
+[1.396s] Copying ../../build/my_taller1/my_taller1.egg-info to /home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1-0.0.0-py3.10.egg-info
+[1.397s] running install_scripts
+[1.419s] Installing nodo1 = my_taller1.nodo1:mainkeyboard_teleop_hold script to /home/yesid/Robotica/install/my_taller1/lib/my_taller1
+[1.420s] writing list of installed files to '/home/yesid/Robotica/build/my_taller1/install.log'
+[1.458s] Invoked command in '/home/yesid/Robotica/src/my_taller1' returned '0': PYTHONPATH=/home/yesid/Robotica/build/my_taller1/prefix_override:/home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_taller1 build --build-base /home/yesid/Robotica/build/my_taller1/build install --record /home/yesid/Robotica/build/my_taller1/install.log --single-version-externally-managed
