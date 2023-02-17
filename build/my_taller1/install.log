@@ -1,17 +1,21 @@
 /home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1/keyboard_teleop_hold.py
 /home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1/__init__.py
 /home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1/terminal.py
+/home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1/position_widget.py
 /home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1/teleop.py
 /home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1/nodo1.py
 /home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1/nodo_movement.py
 /home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1/interfaz.py
+/home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1/h.py
 /home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1/__pycache__/keyboard_teleop_hold.cpython-310.pyc
 /home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1/__pycache__/__init__.cpython-310.pyc
 /home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1/__pycache__/terminal.cpython-310.pyc
+/home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1/__pycache__/position_widget.cpython-310.pyc
 /home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1/__pycache__/teleop.cpython-310.pyc
 /home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1/__pycache__/nodo1.cpython-310.pyc
 /home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1/__pycache__/nodo_movement.cpython-310.pyc
 /home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1/__pycache__/interfaz.cpython-310.pyc
+/home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1/__pycache__/h.cpython-310.pyc
 /home/yesid/Robotica/install/my_taller1/share/ament_index/resource_index/packages/my_taller1
 /home/yesid/Robotica/install/my_taller1/share/my_taller1/package.xml
 /home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1-0.0.0-py3.10.egg-info/SOURCES.txt
@@ -23,3 +27,4 @@
 /home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages/my_taller1-0.0.0-py3.10.egg-info/entry_points.txt
 /home/yesid/Robotica/install/my_taller1/lib/my_taller1/keyboard_teleop_hold
 /home/yesid/Robotica/install/my_taller1/lib/my_taller1/nodo1
+/home/yesid/Robotica/install/my_taller1/lib/my_taller1/position

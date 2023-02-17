@@ -1,4 +1,5 @@
 [console_scripts]
 keyboard_teleop_hold = my_taller1.keyboard_teleop_hold:main
 nodo1 = my_taller1.nodo1:main
+position = my_taller1.position_widget:main
 

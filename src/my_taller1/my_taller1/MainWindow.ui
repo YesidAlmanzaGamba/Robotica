@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(255, 255, 253);
+   <string notr="true">background-color:rgb(129, 61, 156);
 </string>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -22,7 +22,7 @@
     <property name="geometry">
      <rect>
       <x>1110</x>
-      <y>10</y>
+      <y>0</y>
       <width>71</width>
       <height>61</height>
      </rect>
@@ -46,7 +46,7 @@ border-radius:70px;
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>320</x>
+      <x>380</x>
       <y>0</y>
       <width>491</width>
       <height>51</height>
@@ -54,60 +54,45 @@ border-radius:70px;
     </property>
     <property name="font">
      <font>
-      <family>Ubuntu</family>
-      <pointsize>39</pointsize>
-      <weight>9</weight>
+      <family>URW Bookman</family>
+      <pointsize>30</pointsize>
+      <weight>8</weight>
       <italic>false</italic>
       <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(165, 29, 45);
+     <string notr="true">background-color: rgb(63, 233, 41);
 
 color:rgb(255, 255, 255);
-font: 75 39pt &quot;Ubuntu&quot;;
+font: 63 30pt &quot;URW Bookman&quot;;
 border-style:solid;
 border-radius:25px;
 </string>
     </property>
     <property name="text">
-     <string>Spyder Interface</string>
+     <string>Scorpion Interface</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QWidget" name="horizontalLayoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>80</y>
-      <width>961</width>
-      <height>341</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <widget class="QWidget" name="widgetPosition" native="true"/>
-     </item>
-     <item>
-      <widget class="QWidget" name="widget_Camara" native="true"/>
-     </item>
-     <item>
-      <widget class="QWidget" name="widget_entorno" native="true"/>
-     </item>
-    </layout>
-   </widget>
    <widget class="QWidget" name="gridLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>430</y>
-      <width>961</width>
-      <height>25</height>
+      <x>100</x>
+      <y>90</y>
+      <width>861</width>
+      <height>41</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
+     <property name="horizontalSpacing">
+      <number>8</number>
+     </property>
+     <property name="verticalSpacing">
+      <number>6</number>
+     </property>
      <item row="0" column="2">
       <widget class="QLabel" name="trayectory_status">
        <property name="font">
@@ -164,6 +149,34 @@ border-radius:15px;
        </property>
       </widget>
      </item>
+     <item row="0" column="3">
+      <widget class="QLabel" name="camera_status_2">
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(165, 29, 45);
+
+color:rgb(255, 255, 255);
+font: 75 15pt &quot;Ubuntu&quot;;
+border-style:solid;
+border-radius:5px;
+</string>
+       </property>
+       <property name="text">
+        <string>Movement: Disconected</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
      <item row="0" column="0">
       <widget class="QLabel" name="position_status">
        <property name="font">
@@ -200,12 +213,19 @@ border-radius:15px;
       <x>1010</x>
       <y>90</y>
       <width>211</width>
-      <height>133</height>
+      <height>111</height>
      </rect>
     </property>
     <layout class="QFormLayout" name="formLayout">
      <item row="0" column="0">
       <widget class="QLabel" name="label_3">
+       <property name="styleSheet">
+        <string notr="true">
+background-color:rgb(61, 56, 70);
+border-style:solid;
+border-radius:25px;
+color:rgb(246, 245, 244);</string>
+       </property>
        <property name="text">
         <string>Nodos 
 Activos 
@@ -214,10 +234,21 @@ Ros2</string>
       </widget>
      </item>
      <item row="0" column="1">
-      <widget class="QLCDNumber" name="lcdNodos"/>
+      <widget class="QLCDNumber" name="lcdNodos">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(246, 245, 244);</string>
+       </property>
+      </widget>
      </item>
      <item row="1" column="0">
       <widget class="QLabel" name="label_4">
+       <property name="styleSheet">
+        <string notr="true">color:rgb(246, 245, 244);
+background-color:rgb(61, 56, 70);
+border-style:solid;
+border-radius:25px;
+</string>
+       </property>
        <property name="text">
         <string>Topicos 
 Activos 
@@ -226,7 +257,11 @@ Ros2</string>
       </widget>
      </item>
      <item row="1" column="1">
-      <widget class="QLCDNumber" name="lcdTopicos"/>
+      <widget class="QLCDNumber" name="lcdTopicos">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(246, 245, 244);</string>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
@@ -263,68 +298,20 @@ border-radius:25px;
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_27">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>70</y>
-      <width>981</width>
-      <height>681</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-background-color:rgb(159, 155, 155);
-border-style:solid;
-border-radius:25px;
-</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>1000</x>
-      <y>240</y>
-      <width>234</width>
-      <height>146</height>
+      <x>460</x>
+      <y>150</y>
+      <width>481</width>
+      <height>311</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
-      <widget class="QLabel" name="camera_status_2">
-       <property name="font">
-        <font>
-         <family>Ubuntu</family>
-         <pointsize>15</pointsize>
-         <weight>9</weight>
-         <italic>false</italic>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(165, 29, 45);
-
-color:rgb(255, 255, 255);
-font: 75 15pt &quot;Ubuntu&quot;;
-border-style:solid;
-border-radius:5px;
-</string>
-       </property>
-       <property name="text">
-        <string>Movement: Disconected</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item>
       <widget class="QPushButton" name="teleoperation_button">
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(28, 113, 216);
+        <string notr="true">background-color: rgb(93, 46, 133);
 border-radius:10px;
 color:rgb(255, 255, 255);
 font: 75 15pt &quot;Ubuntu&quot;;
@@ -339,7 +326,7 @@ border-style:solid;
      <item>
       <widget class="QPushButton" name="navigation_button">
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(28, 113, 216);
+        <string notr="true">background-color: rgb(93, 46, 133);
 border-radius:10px;
 color:rgb(255, 255, 255);
 font: 75 15pt &quot;Ubuntu&quot;;
@@ -353,9 +340,16 @@ border-style:solid;
      </item>
      <item>
       <widget class="QLabel" name="label_93">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(255, 120, 0);
+border-radius:10px;</string>
+       </property>
        <property name="text">
         <string>Seleccione el tipo de movimiento
 que va a utilizar el robot.</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </item>
@@ -365,9 +359,9 @@ que va a utilizar el robot.</string>
     <property name="geometry">
      <rect>
       <x>1000</x>
-      <y>410</y>
+      <y>220</y>
       <width>231</width>
-      <height>321</height>
+      <height>511</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -381,7 +375,13 @@ border-radius:15px;
 </string>
     </property>
     <property name="text">
-     <string>Movement information</string>
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../../../Descargas/zero.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -390,22 +390,48 @@ border-radius:15px;
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>460</y>
-      <width>201</width>
-      <height>231</height>
+      <x>90</x>
+      <y>150</y>
+      <width>336</width>
+      <height>409</height>
      </rect>
     </property>
     <layout class="QFormLayout" name="form_position">
+     <item row="0" column="0" colspan="2">
+      <widget class="QPushButton" name="nodo_Position">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(93, 46, 133);
+border-radius:10px;
+color:rgb(255, 255, 255);
+font: 75 15pt &quot;Ubuntu&quot;;
+border-style:solid;
+</string>
+       </property>
+       <property name="text">
+        <string>Conectar Nodo</string>
+       </property>
+      </widget>
+     </item>
      <item row="1" column="0">
       <widget class="QLabel" name="label_88">
+       <property name="styleSheet">
+        <string notr="true">font: italic 11pt &quot;Ubuntu Condensed&quot;;
+background-color:rgb(129, 61, 156);
+color:rgb(255, 255, 255);
+border-style:solid;</string>
+       </property>
        <property name="text">
-        <string> Cordenadas (X)</string>
+        <string> 
+Coordenadas (X) (m)
+</string>
        </property>
       </widget>
      </item>
      <item row="1" column="1">
       <widget class="QLabel" name="pos_x_3">
+       <property name="styleSheet">
+        <string notr="true">color:rgb(63, 233, 41);</string>
+       </property>
        <property name="text">
         <string/>
        </property>
@@ -413,13 +439,24 @@ border-radius:15px;
      </item>
      <item row="2" column="0">
       <widget class="QLabel" name="label_89">
+       <property name="styleSheet">
+        <string notr="true">font: italic 11pt &quot;Ubuntu Condensed&quot;;
+background-color:rgb(129, 61, 156);
+color:rgb(255, 255, 255);
+border-style:solid;</string>
+       </property>
        <property name="text">
-        <string> Cordenadas (Y)</string>
+        <string> 
+Coordenadas (Y)(m) 
+</string>
        </property>
       </widget>
      </item>
      <item row="2" column="1">
       <widget class="QLabel" name="pos_y_3">
+       <property name="styleSheet">
+        <string notr="true">color:rgb(63, 233, 41);</string>
+       </property>
        <property name="text">
         <string/>
        </property>
@@ -427,13 +464,24 @@ border-radius:15px;
      </item>
      <item row="3" column="0">
       <widget class="QLabel" name="label_90">
+       <property name="styleSheet">
+        <string notr="true">font: italic 11pt &quot;Ubuntu Condensed&quot;;
+background-color:rgb(129, 61, 156);
+color:rgb(255, 255, 255);
+border-style:solid;</string>
+       </property>
        <property name="text">
-        <string> Cordenadas (z)</string>
+        <string> 
+ Coordenadas (z) (m) 
+</string>
        </property>
       </widget>
      </item>
      <item row="3" column="1">
       <widget class="QLabel" name="pos_z_3">
+       <property name="styleSheet">
+        <string notr="true">color:rgb(63, 233, 41);</string>
+       </property>
        <property name="text">
         <string/>
        </property>
@@ -441,9 +489,16 @@ border-radius:15px;
      </item>
      <item row="4" column="0">
       <widget class="QLabel" name="label_91">
+       <property name="styleSheet">
+        <string notr="true">font: italic 11pt &quot;Ubuntu Condensed&quot;;
+background-color:rgb(129, 61, 156);
+color:rgb(255, 255, 255);
+border-style:solid;</string>
+       </property>
        <property name="text">
         <string>    Velocidad      .  
- Linear (m/s)</string>
+ Linear (m/s) 
+</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -452,6 +507,9 @@ border-radius:15px;
      </item>
      <item row="4" column="1">
       <widget class="QLabel" name="vel_linear_3">
+       <property name="styleSheet">
+        <string notr="true">color:rgb(63, 233, 41);</string>
+       </property>
        <property name="text">
         <string/>
        </property>
@@ -459,9 +517,16 @@ border-radius:15px;
      </item>
      <item row="5" column="0">
       <widget class="QLabel" name="label_92">
+       <property name="styleSheet">
+        <string notr="true">font: italic 11pt &quot;Ubuntu Condensed&quot;;
+background-color:rgb(129, 61, 156);
+color:rgb(255, 255, 255);
+border-style:solid;</string>
+       </property>
        <property name="text">
         <string>    Velocidad      .  
- Angular (rad/s)</string>
+ Angular (rad/s) 
+</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -470,13 +535,33 @@ border-radius:15px;
      </item>
      <item row="5" column="1">
       <widget class="QLabel" name="vel_angular_3">
+       <property name="styleSheet">
+        <string notr="true">color:rgb(63, 233, 41);</string>
+       </property>
        <property name="text">
         <string/>
        </property>
       </widget>
      </item>
-     <item row="6" column="0" colspan="2">
-      <widget class="QPushButton" name="pushButton_11">
+     <item row="9" column="0" colspan="2">
+      <widget class="QPushButton" name="button_capture_coordinates">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(28, 55, 66);
+
+
+color:rgb(255, 255, 255);
+font: 75 15pt &quot;Ubuntu&quot;;
+border-style:solid;
+border-radius:15px;
+</string>
+       </property>
+       <property name="text">
+        <string>Guardar Coordenadas</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0" colspan="2">
+      <widget class="QPushButton" name="button_capture">
        <property name="styleSheet">
         <string notr="true">background-color: rgb(28, 55, 66);
 
@@ -492,18 +577,20 @@ border-radius:15px;
        </property>
       </widget>
      </item>
-     <item row="0" column="0" colspan="2">
-      <widget class="QPushButton" name="nodo_Position">
+     <item row="10" column="0" colspan="2">
+      <widget class="QPushButton" name="button_capture_coordinates_2">
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(28, 113, 216);
-border-radius:10px;
+        <string notr="true">background-color: rgb(28, 55, 66);
+
+
 color:rgb(255, 255, 255);
 font: 75 15pt &quot;Ubuntu&quot;;
 border-style:solid;
+border-radius:15px;
 </string>
        </property>
        <property name="text">
-        <string>Conectar Nodo</string>
+        <string>Importar Coordenadas</string>
        </property>
       </widget>
      </item>
@@ -603,7 +690,7 @@ border-radius:10px;
      <item row="0" column="3">
       <widget class="QPushButton" name="button_local_setup">
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(145, 65, 172);
+        <string notr="true">background-color: rgb(224, 27, 36);
 
 color:rgb(255, 255, 255);
 font: 75 15pt &quot;Ubuntu&quot;;
@@ -618,11 +705,35 @@ border-radius:5px;
      </item>
     </layout>
    </widget>
-   <zorder>label_27</zorder>
+   <widget class="QLabel" name="label_94">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>470</y>
+      <width>341</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+border-radius:10px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../../../Descargas/pngwing.com.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
    <zorder>label_5</zorder>
    <zorder>label</zorder>
    <zorder>label_2</zorder>
-   <zorder>horizontalLayoutWidget</zorder>
    <zorder>gridLayoutWidget</zorder>
    <zorder>formLayoutWidget</zorder>
    <zorder>label_14</zorder>
@@ -631,6 +742,7 @@ border-radius:5px;
    <zorder>layoutWidget</zorder>
    <zorder>horizontalLayoutWidget_2</zorder>
    <zorder>gridLayoutWidget_2</zorder>
+   <zorder>label_94</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">

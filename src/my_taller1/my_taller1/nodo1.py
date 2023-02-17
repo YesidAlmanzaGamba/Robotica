@@ -14,7 +14,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 #from matplotlib.animation import FuncAnimation
 import threading
-
+import sys
 import pygame
 
 
@@ -40,10 +40,19 @@ class Movement(Node):
     pygame.init()
     self.Dimensiones=(500,500)
     self.Pantalla = pygame.display.set_mode(self.Dimensiones)
+    self.Pantalla.fill((0,0,0))
     pygame.display.set_caption("Trayectoria del robot ")
+    button1 = pygame.Rect(50, 50, 100, 50)
+    button2 = pygame.Rect(50, 150, 100, 50)
+    color_inactive = pygame.Color('lightskyblue3')
+    color_active = pygame.Color('dodgerblue2')
+    current_color1 = color_inactive
+    current_color2 = color_inactive
+
+
     
     self.reloj = pygame.time.Clock()
-    self.Pantalla.fill((0,0,0))
+
 
 
     self.x_pos_actual=0
@@ -55,21 +64,6 @@ class Movement(Node):
 
 
   
-    
-    
-    """
-    self.figure=plt.figure()   
-    self.ax=self.figure.add_subplot(1,1,1)
-
-
-    self.h1,=plt.plot(self.global_x_cordinates,self.global_y_cordinates)
-    plt.xlim(-20,20)
-    plt.ylim(-20,20)
-    
-
-    dataCollector = threading.Thread(target =self.animate(self.h1,self.figure,self.global_x_cordinates,self.global_y_cordinates))
-    dataCollector.start()
-    """
     
     
   def update_pixels(self,x,y):
@@ -100,6 +94,7 @@ class Movement(Node):
     for Evento in pygame.event.get():
       if Evento.type == pygame.QUIT:
           pygame.quit()
+          sys.exit()
 
     
     x,y,z=msg.linear.x,msg.linear.y,msg.linear.z #Descompresiòn de coordenadas
@@ -135,29 +130,6 @@ class Movement(Node):
     self.y_pos_anterior=y
 
   
-
-   
-
-
-  
-
-
-  
-"""
-  def animate(num,h1,figure,x,y):
-
-    ani=FuncAnimation(figure,update_line,fargs=(h1,x,y),interval=50,blit=False)
-    plt.show()
-
-
-def update_line(num,hl,x,y):
-
-    hl.set_data(x, y)
-    return hl,
-"""
-
-  
- 
 def main(args=None):
  
   # Initialize the rclpy library
@@ -181,8 +153,7 @@ def main(args=None):
   # Shutdown the ROS client library for Python
   rclpy.shutdown()
   
- 
+
 if __name__ == '__main__':
   main()
-
 
