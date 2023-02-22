@@ -9,7 +9,8 @@ from PyQt5.uic import loadUi
 import os
 import matplotlib.pyplot as plt
 import json
-
+from PyQt5.QtGui import QKeyEvent
+from PyQt5.QtCore import Qt
 
 class RosNodeThread(threading.Thread):
     def __init__(self):
@@ -234,6 +235,28 @@ class MyApp(QMainWindow):
         #self.start_thread("ros2_commands")
         self.runRos2Command(". install/local_setup.sh")
         #self.end_thread("ros2_comands")
+
+    def keyPressEvent(self, event):
+        if event.key() == Qt.Key_W:
+            self.label_w.setStyleSheet("background-color:rgb(86,250,29)")
+
+        elif event.key() == Qt.Key_A:
+            self.label_a.setStyleSheet("background-color:rgb(86,250,29)")
+        elif event.key() == Qt.Key_S:
+            self.label_s.setStyleSheet("background-color:rgb(86,250,29)")
+        elif event.key() == Qt.Key_D:
+            self.label_d.setStyleSheet("background-color:rgb(86,250,29)")
+        else:
+            self.red()
+          
+
+    def red(self):
+        self.label_d.setStyleSheet("background-color: rgb(165, 29, 45);color:rgb(255, 255, 255);font: 75 15pt Ubuntu;border-style:solid;border-radius:15px;")
+        self.label_a.setStyleSheet("background-color: rgb(165, 29, 45);color:rgb(255, 255, 255);font: 75 15pt Ubuntu;border-style:solid;border-radius:15px;")
+        self.label_s.setStyleSheet("background-color: rgb(165, 29, 45);color:rgb(255, 255, 255);font: 75 15pt Ubuntu;border-style:solid;border-radius:15px;")
+        self.label_w.setStyleSheet("background-color: rgb(165, 29, 45);color:rgb(255, 255, 255);font: 75 15pt Ubuntu;border-style:solid;border-radius:15px;")
+
+
 def main(args=None):
     rclpy.init(args=sys.argv)
     app = QApplication(sys.argv)

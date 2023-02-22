@@ -731,6 +731,142 @@ border-radius:10px;</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
+   <widget class="QLabel" name="label_w">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>580</y>
+      <width>81</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>15</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(165, 29, 45);
+
+color:rgb(255, 255, 255);
+font: 75 15pt &quot;Ubuntu&quot;;
+border-style:solid;
+border-radius:15px;
+</string>
+    </property>
+    <property name="text">
+     <string>w</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_a">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>620</y>
+      <width>81</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>15</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(165, 29, 45);
+
+color:rgb(255, 255, 255);
+font: 75 15pt &quot;Ubuntu&quot;;
+border-style:solid;
+border-radius:15px;
+</string>
+    </property>
+    <property name="text">
+     <string>A</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_s">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>620</y>
+      <width>81</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>15</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(165, 29, 45);
+
+color:rgb(255, 255, 255);
+font: 75 15pt &quot;Ubuntu&quot;;
+border-style:solid;
+border-radius:15px;
+</string>
+    </property>
+    <property name="text">
+     <string>S</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_d">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>620</y>
+      <width>81</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>15</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(165, 29, 45);
+
+color:rgb(255, 255, 255);
+font: 75 15pt &quot;Ubuntu&quot;;
+border-style:solid;
+border-radius:15px;
+</string>
+    </property>
+    <property name="text">
+     <string>D</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
    <zorder>label_5</zorder>
    <zorder>label</zorder>
    <zorder>label_2</zorder>
@@ -743,6 +879,10 @@ border-radius:10px;</string>
    <zorder>horizontalLayoutWidget_2</zorder>
    <zorder>gridLayoutWidget_2</zorder>
    <zorder>label_94</zorder>
+   <zorder>label_w</zorder>
+   <zorder>label_a</zorder>
+   <zorder>label_s</zorder>
+   <zorder>label_d</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
