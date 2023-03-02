@@ -67,11 +67,16 @@ class MovimientosDialog(QWidget):
 
 
     def iniciar_nodo_ros2(self):
-        rclpy.init()
-        node = HoldKeyTeleop(self.ruta)
-        rclpy.spin(node)
-        rclpy.shutdown()
-    
+
+        try:
+            rclpy.init()
+            node = HoldKeyTeleop(self.ruta)
+            rclpy.spin(node)
+            rclpy.shutdown()
+
+        except Exception as e:
+            print("Finalizo")
+        
 
 
 
@@ -136,6 +141,9 @@ Configuration:
 
 Max Linear Speed: +/-{self.LINEAR_MAX} m/s
 Max Angular Speed: +/-{self.ANGULAR_MAX} rad/s
+
+
+Save Movemnts: G
 """
         )
 
@@ -188,7 +196,7 @@ Max Angular Speed: +/-{self.ANGULAR_MAX} rad/s
                     f.close()
       
 
-                os.kill(os.getpid(), signal.SIGINT)
+                #os.kill(os.getpid(), signal.SIGINT)
 
  
                 

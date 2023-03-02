@@ -8,6 +8,7 @@ setup.py
 ../../build/my_taller1/my_taller1.egg-info/requires.txt
 ../../build/my_taller1/my_taller1.egg-info/top_level.txt
 ../../build/my_taller1/my_taller1.egg-info/zip-safe
+my_taller1/MiServicio.py
 my_taller1/Player.py
 my_taller1/__init__.py
 my_taller1/h.py
@@ -15,6 +16,7 @@ my_taller1/keyboard_teleop_hold.py
 my_taller1/nodo1.py
 my_taller1/nodo_movement.py
 my_taller1/position_widget.py
+my_taller1/publishPlayer.py
 my_taller1/teleop.py
 my_taller1/terminal.py
 resource/my_taller1
