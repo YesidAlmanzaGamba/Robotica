@@ -1,0 +1,194 @@
+[0.000000] (-) TimerEvent: {}
+[0.000282] (interface_taller1) JobQueued: {'identifier': 'interface_taller1', 'dependencies': OrderedDict()}
+[0.000836] (my_taller1) JobQueued: {'identifier': 'my_taller1', 'dependencies': OrderedDict()}
+[0.000973] (taller1) JobQueued: {'identifier': 'taller1', 'dependencies': OrderedDict()}
+[0.001549] (interface_taller1) JobStarted: {'identifier': 'interface_taller1'}
+[0.013586] (my_taller1) JobStarted: {'identifier': 'my_taller1'}
+[0.025273] (taller1) JobStarted: {'identifier': 'taller1'}
+[0.039417] (interface_taller1) JobProgress: {'identifier': 'interface_taller1', 'progress': 'cmake'}
+[0.039647] (interface_taller1) Command: {'cmd': ['/usr/bin/cmake', '/home/yesid/Robotica/src/interface_taller1', '-DCMAKE_INSTALL_PREFIX=/home/yesid/Robotica/install/interface_taller1'], 'cwd': '/home/yesid/Robotica/build/interface_taller1', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'es_CO:es'), ('USER', 'yesid'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/119/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/yesid'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/yesid/Robotica/src'), ('TERM_PROGRAM_VERSION', '1.75.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/119/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/119/usr/share/code/code'), ('MANAGERPID', '1619'), ('SYSTEMD_EXEC_PID', '1827'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4128'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/yesid/Robotica/install:/home/yesid/Robotica/src/interface_taller1/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yesid'), ('JOURNAL_STREAM', '8:30639'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yesid'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/yesid/.local/bin:/opt/ros/humble/bin:/home/yesid/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/yesid-HP-Pavilion-Gaming-Laptop-15-dk0xxx:@/tmp/.ICE-unix/1797,unix/yesid-HP-Pavilion-Gaming-Laptop-15-dk0xxx:/tmp/.ICE-unix/1797'), ('INVOCATION_ID', '4bca62654f6846f189642937e658dd2b'), ('XDG_MENU_PREFIX', 'gnome-'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'es_CO.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.AXOZ01'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-8f2986d2c0.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/snap/code/119/usr/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/yesid/Robotica/install/taller1:/home/yesid/Robotica/install/my_taller1:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yesid/Robotica/build/interface_taller1'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yesid/Robotica/install/taller1/lib/python3.10/site-packages:/home/yesid/Robotica/install/my_taller1/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/yesid/Robotica/install/taller1:/home/yesid/Robotica/install/my_taller1:/opt/ros/humble')]), 'shell': False}
+[0.101966] (-) TimerEvent: {}
+[0.202265] (-) TimerEvent: {}
+[0.302732] (-) TimerEvent: {}
+[0.351931] (interface_taller1) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) in CMakeLists.txt:\n'}
+[0.352735] (interface_taller1) StderrLine: {'line': b'  No project() command is present.  The top-level CMakeLists.txt file must\n'}
+[0.353438] (interface_taller1) StderrLine: {'line': b'  contain a literal, direct call to the project() command.  Add a line of\n'}
+[0.353558] (interface_taller1) StderrLine: {'line': b'  code such as\n'}
+[0.353652] (interface_taller1) StderrLine: {'line': b'\n'}
+[0.353735] (interface_taller1) StderrLine: {'line': b'    project(ProjectName)\n'}
+[0.353814] (interface_taller1) StderrLine: {'line': b'\n'}
+[0.353896] (interface_taller1) StderrLine: {'line': b'  near the top of the file, but after cmake_minimum_required().\n'}
+[0.353993] (interface_taller1) StderrLine: {'line': b'\n'}
+[0.354073] (interface_taller1) StderrLine: {'line': b'  CMake is pretending there is a "project(Project)" command on the first\n'}
+[0.354155] (interface_taller1) StderrLine: {'line': b'  line.\n'}
+[0.354236] (interface_taller1) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.354317] (interface_taller1) StderrLine: {'line': b'\x1b[0m\n'}
+[0.354401] (interface_taller1) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[0.354517] (interface_taller1) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[0.354601] (interface_taller1) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.354687] (interface_taller1) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.354772] (interface_taller1) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.354852] (interface_taller1) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.354931] (interface_taller1) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.355012] (interface_taller1) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.355104] (interface_taller1) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.355184] (interface_taller1) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.355262] (interface_taller1) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.355340] (interface_taller1) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.355423] (interface_taller1) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.402814] (-) TimerEvent: {}
+[0.503048] (-) TimerEvent: {}
+[0.512372] (interface_taller1) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[0.589042] (interface_taller1) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/humble/share/ament_cmake_core/cmake/core/normalize_path.cmake:52 (while):\n'}
+[0.589192] (interface_taller1) StderrLine: {'line': b'  had incorrect arguments:\n'}
+[0.589278] (interface_taller1) StderrLine: {'line': b'\n'}
+[0.589364] (interface_taller1) StderrLine: {'line': b'    "TRUE"\n'}
+[0.589458] (interface_taller1) StderrLine: {'line': b'\n'}
+[0.589546] (interface_taller1) StderrLine: {'line': b'  An argument named "TRUE" appears in a conditional statement.  Policy\n'}
+[0.589616] (interface_taller1) StderrLine: {'line': b'  CMP0012 is not set: if() recognizes numbers and boolean constants.  Run\n'}
+[0.589684] (interface_taller1) StderrLine: {'line': b'  "cmake --help-policy CMP0012" for policy details.  Use the cmake_policy\n'}
+[0.589762] (interface_taller1) StderrLine: {'line': b'  command to set the policy and suppress this warning.\n'}
+[0.589832] (interface_taller1) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.589903] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/normalize_path.cmake:34 (_normalize_path__collapse_redundant)\n'}
+[0.589997] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/builtin_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake:13 (normalize_path)\n'}
+[0.590068] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)\n'}
+[0.590136] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/std_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.590198] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/std_msgs/cmake/std_msgsConfig.cmake:41 (include)\n'}
+[0.590249] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/geometry_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.590300] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/geometry_msgs/cmake/geometry_msgsConfig.cmake:41 (include)\n'}
+[0.590351] (interface_taller1) StderrLine: {'line': b'  CMakeLists.txt:1 (find_package)\n'}
+[0.590402] (interface_taller1) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.590452] (interface_taller1) StderrLine: {'line': b'\x1b[0m\n'}
+[0.590501] (interface_taller1) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/humble/share/ament_cmake_core/cmake/core/normalize_path.cmake:72 (while):\n'}
+[0.590551] (interface_taller1) StderrLine: {'line': b'  had incorrect arguments:\n'}
+[0.590601] (interface_taller1) StderrLine: {'line': b'\n'}
+[0.590651] (interface_taller1) StderrLine: {'line': b'    "TRUE"\n'}
+[0.590703] (interface_taller1) StderrLine: {'line': b'\n'}
+[0.590753] (interface_taller1) StderrLine: {'line': b'  An argument named "TRUE" appears in a conditional statement.  Policy\n'}
+[0.590804] (interface_taller1) StderrLine: {'line': b'  CMP0012 is not set: if() recognizes numbers and boolean constants.  Run\n'}
+[0.590855] (interface_taller1) StderrLine: {'line': b'  "cmake --help-policy CMP0012" for policy details.  Use the cmake_policy\n'}
+[0.590906] (interface_taller1) StderrLine: {'line': b'  command to set the policy and suppress this warning.\n'}
+[0.590964] (interface_taller1) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.591056] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/normalize_path.cmake:35 (_normalize_path__collapse_uplevel_reference)\n'}
+[0.591151] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/builtin_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake:13 (normalize_path)\n'}
+[0.591219] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)\n'}
+[0.591297] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/std_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.591389] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/std_msgs/cmake/std_msgsConfig.cmake:41 (include)\n'}
+[0.591444] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/geometry_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.591516] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/geometry_msgs/cmake/geometry_msgsConfig.cmake:41 (include)\n'}
+[0.591592] (interface_taller1) StderrLine: {'line': b'  CMakeLists.txt:1 (find_package)\n'}
+[0.591676] (interface_taller1) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.591762] (interface_taller1) StderrLine: {'line': b'\x1b[0m\n'}
+[0.597982] (interface_taller1) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/humble/share/ament_cmake_core/cmake/core/normalize_path.cmake:52 (while):\n'}
+[0.598248] (interface_taller1) StderrLine: {'line': b'  had incorrect arguments:\n'}
+[0.598350] (interface_taller1) StderrLine: {'line': b'\n'}
+[0.598441] (interface_taller1) StderrLine: {'line': b'    "TRUE"\n'}
+[0.598530] (interface_taller1) StderrLine: {'line': b'\n'}
+[0.598618] (interface_taller1) StderrLine: {'line': b'  An argument named "TRUE" appears in a conditional statement.  Policy\n'}
+[0.598705] (interface_taller1) StderrLine: {'line': b'  CMP0012 is not set: if() recognizes numbers and boolean constants.  Run\n'}
+[0.598794] (interface_taller1) StderrLine: {'line': b'  "cmake --help-policy CMP0012" for policy details.  Use the cmake_policy\n'}
+[0.598885] (interface_taller1) StderrLine: {'line': b'  command to set the policy and suppress this warning.\n'}
+[0.598970] (interface_taller1) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.599101] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/normalize_path.cmake:34 (_normalize_path__collapse_redundant)\n'}
+[0.599191] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/rcutils/cmake/ament_cmake_export_include_directories-extras.cmake:13 (normalize_path)\n'}
+[0.599275] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)\n'}
+[0.599360] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.599448] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)\n'}
+[0.599536] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.599619] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)\n'}
+[0.599711] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/std_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.599794] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/std_msgs/cmake/std_msgsConfig.cmake:41 (include)\n'}
+[0.599876] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/geometry_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.599963] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/geometry_msgs/cmake/geometry_msgsConfig.cmake:41 (include)\n'}
+[0.600048] (interface_taller1) StderrLine: {'line': b'  CMakeLists.txt:1 (find_package)\n'}
+[0.600129] (interface_taller1) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.600211] (interface_taller1) StderrLine: {'line': b'\x1b[0m\n'}
+[0.600293] (interface_taller1) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/humble/share/ament_cmake_core/cmake/core/normalize_path.cmake:72 (while):\n'}
+[0.600377] (interface_taller1) StderrLine: {'line': b'  had incorrect arguments:\n'}
+[0.600458] (interface_taller1) StderrLine: {'line': b'\n'}
+[0.600539] (interface_taller1) StderrLine: {'line': b'    "TRUE"\n'}
+[0.600618] (interface_taller1) StderrLine: {'line': b'\n'}
+[0.600701] (interface_taller1) StderrLine: {'line': b'  An argument named "TRUE" appears in a conditional statement.  Policy\n'}
+[0.600783] (interface_taller1) StderrLine: {'line': b'  CMP0012 is not set: if() recognizes numbers and boolean constants.  Run\n'}
+[0.600865] (interface_taller1) StderrLine: {'line': b'  "cmake --help-policy CMP0012" for policy details.  Use the cmake_policy\n'}
+[0.600946] (interface_taller1) StderrLine: {'line': b'  command to set the policy and suppress this warning.\n'}
+[0.601029] (interface_taller1) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.601111] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/normalize_path.cmake:35 (_normalize_path__collapse_uplevel_reference)\n'}
+[0.601193] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/rcutils/cmake/ament_cmake_export_include_directories-extras.cmake:13 (normalize_path)\n'}
+[0.601275] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)\n'}
+[0.601359] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.601441] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)\n'}
+[0.601567] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.601656] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)\n'}
+[0.601738] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/std_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.601821] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/std_msgs/cmake/std_msgsConfig.cmake:41 (include)\n'}
+[0.601927] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/geometry_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.602018] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/geometry_msgs/cmake/geometry_msgsConfig.cmake:41 (include)\n'}
+[0.602103] (interface_taller1) StderrLine: {'line': b'  CMakeLists.txt:1 (find_package)\n'}
+[0.602194] (interface_taller1) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.602278] (interface_taller1) StderrLine: {'line': b'\x1b[0m\n'}
+[0.603135] (-) TimerEvent: {}
+[0.634888] (interface_taller1) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/humble/share/ament_cmake_core/cmake/core/list_append_unique.cmake:30 (if):\n'}
+[0.635184] (interface_taller1) StderrLine: {'line': b'  Policy CMP0057 is not set: Support new IN_LIST if() operator.  Run "cmake\n'}
+[0.635418] (interface_taller1) StderrLine: {'line': b'  --help-policy CMP0057" for policy details.  Use the cmake_policy command to\n'}
+[0.635528] (interface_taller1) StderrLine: {'line': b'  set the policy and suppress this warning.\n'}
+[0.635625] (interface_taller1) StderrLine: {'line': b'\n'}
+[0.635711] (interface_taller1) StderrLine: {'line': b'  IN_LIST will be interpreted as an operator when the policy is set to NEW.\n'}
+[0.635794] (interface_taller1) StderrLine: {'line': b'  Since the policy is not set the OLD behavior will be used.\n'}
+[0.635877] (interface_taller1) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.635960] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/rcutils/cmake/ament_cmake_export_dependencies-extras.cmake:84 (list_append_unique)\n'}
+[0.636042] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)\n'}
+[0.636147] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.636231] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)\n'}
+[0.636316] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.636404] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)\n'}
+[0.636486] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/std_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.636571] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/std_msgs/cmake/std_msgsConfig.cmake:41 (include)\n'}
+[0.636652] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/geometry_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.636742] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/geometry_msgs/cmake/geometry_msgsConfig.cmake:41 (include)\n'}
+[0.636826] (interface_taller1) StderrLine: {'line': b'  CMakeLists.txt:1 (find_package)\n'}
+[0.636907] (interface_taller1) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.636988] (interface_taller1) StderrLine: {'line': b'\x1b[0m\n'}
+[0.637070] (interface_taller1) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/list_append_unique.cmake:30 (if):\n'}
+[0.637151] (interface_taller1) StderrLine: {'line': b'  if given arguments:\n'}
+[0.637232] (interface_taller1) StderrLine: {'line': b'\n'}
+[0.637314] (interface_taller1) StderrLine: {'line': b'    "NOT" "element" "IN_LIST" "rcutils_RECURSIVE_DEPENDENCIES"\n'}
+[0.637395] (interface_taller1) StderrLine: {'line': b'\n'}
+[0.637474] (interface_taller1) StderrLine: {'line': b'  Unknown arguments specified\n'}
+[0.637552] (interface_taller1) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.637642] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/rcutils/cmake/ament_cmake_export_dependencies-extras.cmake:84 (list_append_unique)\n'}
+[0.637737] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)\n'}
+[0.637842] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.637940] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)\n'}
+[0.638025] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.638107] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)\n'}
+[0.638189] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/std_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.638271] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/std_msgs/cmake/std_msgsConfig.cmake:41 (include)\n'}
+[0.638361] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/geometry_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.638444] (interface_taller1) StderrLine: {'line': b'  /opt/ros/humble/share/geometry_msgs/cmake/geometry_msgsConfig.cmake:41 (include)\n'}
+[0.638524] (interface_taller1) StderrLine: {'line': b'  CMakeLists.txt:1 (find_package)\n'}
+[0.638604] (interface_taller1) StderrLine: {'line': b'\n'}
+[0.638686] (interface_taller1) StderrLine: {'line': b'\x1b[0m\n'}
+[0.638769] (interface_taller1) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) in CMakeLists.txt:\n'}
+[0.638850] (interface_taller1) StderrLine: {'line': b'  No cmake_minimum_required command is present.  A line of code such as\n'}
+[0.638937] (interface_taller1) StderrLine: {'line': b'\n'}
+[0.639018] (interface_taller1) StderrLine: {'line': b'    cmake_minimum_required(VERSION 3.22)\n'}
+[0.639103] (interface_taller1) StderrLine: {'line': b'\n'}
+[0.639185] (interface_taller1) StderrLine: {'line': b'  should be added at the top of the file.  The version specified may be lower\n'}
+[0.639274] (interface_taller1) StderrLine: {'line': b'  if you wish to support older CMake versions for this project.  For more\n'}
+[0.639362] (interface_taller1) StderrLine: {'line': b'  information run "cmake --help-policy CMP0000".\n'}
+[0.639449] (interface_taller1) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.639535] (interface_taller1) StderrLine: {'line': b'\x1b[0m\n'}
+[0.639617] (interface_taller1) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.639710] (interface_taller1) StdoutLine: {'line': b'See also "/home/yesid/Robotica/build/interface_taller1/CMakeFiles/CMakeOutput.log".\n'}
+[0.662640] (interface_taller1) CommandEnded: {'returncode': 1}
+[0.681994] (interface_taller1) JobEnded: {'identifier': 'interface_taller1', 'rc': 1}
+[0.703224] (-) TimerEvent: {}
+[0.803492] (-) TimerEvent: {}
+[0.903794] (-) TimerEvent: {}
+[1.004044] (-) TimerEvent: {}
+[1.104271] (-) TimerEvent: {}
+[1.204520] (-) TimerEvent: {}
+[1.216106] (my_taller1) JobEnded: {'identifier': 'my_taller1', 'rc': 'SIGINT'}
+[1.220757] (taller1) JobEnded: {'identifier': 'taller1', 'rc': 'SIGINT'}
+[1.231385] (-) EventReactorShutdown: {}

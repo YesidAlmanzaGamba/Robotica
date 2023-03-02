@@ -5,11 +5,99 @@ import rclpy
 from pynput.keyboard import Key, Listener
 
 from my_taller1.teleop import Teleop
+from PyQt5.QtCore import QCoreApplication
+from PyQt5.QtWidgets import QApplication, QWidget, QMessageBox, QPushButton, QFileDialog
+import sys
+import os
+import threading
+import io
+
+
+ruta1=""
+class MovimientosDialog(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.initUI()
+
+        self.ruta=""
+
+    def initUI(self):
+        self.setGeometry(300, 300, 350, 150)
+        self.setWindowTitle('Guardar movimientos')
+
+        guardarBtn = QPushButton('Guardar', self)
+        guardarBtn.clicked.connect(self.guardar_movimientos)
+        guardarBtn.resize(guardarBtn.sizeHint())
+        guardarBtn.move(50, 50)
+
+        cancelarBtn = QPushButton('Cancelar', self)
+        cancelarBtn.clicked.connect(self.cancelar)
+        cancelarBtn.resize(cancelarBtn.sizeHint())
+        cancelarBtn.move(200, 50)
+
+    def guardar_movimientos(self):
+        filename, _ = QFileDialog.getSaveFileName(self, 'Guardar archivo', '.', 'Archivos de texto (*.txt)')
+        if filename:
+            # Aquí se escribe el código para guardar los movimientos en el archivo
+            QMessageBox.information(self, 'Guardado', 'Los movimientos se han guardado correctamente.')
+            current_dir = os.getcwd()
+            self.ruta= os.path.relpath(filename, current_dir)
+
+            print(self.ruta)
+
+            self.get_ruta()
+
+        else:
+            QMessageBox.warning(self, 'Error', 'No se ha seleccionado ningún archivo.')
+
+    def cancelar(self):
+        self.close()
+        QCoreApplication.quit()
+
+        threading.Thread(target=self.iniciar_nodo_ros2).start()
+
+
+
+    def get_ruta(self):
+        QCoreApplication.quit()
+
+        threading.Thread(target=self.iniciar_nodo_ros2).start()
+
+
+
+
+    def iniciar_nodo_ros2(self):
+        rclpy.init()
+        node = HoldKeyTeleop(self.ruta)
+        rclpy.spin(node)
+        rclpy.shutdown()
+    
+
+
 
 
 class HoldKeyTeleop(Teleop):
-    def __init__(self):
+    def __init__(self,ruta):
         super().__init__()
+
+        self.ruta = ruta
+        print("ruta: ",self.ruta)
+
+        self.file=None
+        try:
+            if self.ruta!=None or len(self.ruta)>0:
+
+                self.file=io.open(self.ruta, "w")
+
+
+        except:
+            print("Error")
+
+        print("file: ",self.file)
+        
+
+        
+
         self.key_listener = Listener(
             on_press=self.update_twist,
             on_release=self.on_release,
@@ -27,6 +115,9 @@ class HoldKeyTeleop(Teleop):
             Key.left: (0.0, self.ANGULAR_MAX),
             Key.right: (0.0, -self.ANGULAR_MAX),
         }
+
+        self.user_actions=""
+
         self.get_logger().info(
             f"""
 This node takes keypresses from the keyboard and publishes them 
@@ -48,43 +139,76 @@ Max Angular Speed: +/-{self.ANGULAR_MAX} rad/s
 """
         )
 
+        
+        
     def on_release(self, key):
+
         if self._is_special_key(key):
 
             if key in self.special_keys_bindings:
                 if key == Key.up or key == Key.down:
-                    self.write_twist(linear=0.0)
+                    self.write_twist(linear=0.0,ruta=self.ruta)
                 elif key == Key.left or key == Key.right:
-                    self.write_twist(angular=0.0)
+                    self.write_twist(angular=0.0,ruta=self.ruta)
+
         else:
             key = key.char
             if key in self.keys_bindings:
                 if key == "w" or key == "s":
-                    self.write_twist(linear=0.0)
+                    self.write_twist(linear=0.0,ruta=self.ruta)
                 elif key == "a" or key == "d":
                 
-                    self.write_twist(angular=0.0)
+                    self.write_twist(angular=0.0,ruta=self.ruta)
 
     def update_twist(self, key):
+       
         binding = None
         if self._is_special_key(key):
             if key in self.special_keys_bindings:
                 binding = self.special_keys_bindings[key]
             else:
-                self.write_twist(0.0, 0.0)
+                self.write_twist(0.0, 0.0,ruta=self.ruta)
+   
         else:
             if key.char == "q":
+
                 os.kill(os.getpid(), signal.SIGINT)
+
+            if key.char == "g":
+
+                text=self.get_text()
+                
+
+                print("hola")
+
+                print(text)
+
+                with open(self.ruta,"w") as f:
+                    f.write(text)
+                    f.close()
+      
+
+                os.kill(os.getpid(), signal.SIGINT)
+
+ 
+                
             if key.char in self.keys_bindings:
                 binding = self.keys_bindings[key.char]
             else:
-                self.write_twist(0.0, 0.0)
+                self.write_twist(0.0, 0.0,ruta=self.ruta)
+
+
+
         if binding is not None:
             new_linear = binding[0]
             new_angular = binding[1]
-            self.write_twist(new_linear, new_angular)
+            self.write_twist(new_linear, new_angular,ruta=self.ruta)
+
+
+                
 
     def _is_special_key(self, key):
+    
         try:
             key.char
             return False
@@ -94,10 +218,22 @@ Max Angular Speed: +/-{self.ANGULAR_MAX} rad/s
 
 def main():
     try:
-        rclpy.init()
-        node = HoldKeyTeleop()
-        rclpy.spin(node)
-        rclpy.shutdown()
+
+        
+        app = QApplication(sys.argv)
+
+        dialog = MovimientosDialog()
+        dialog.show()
+        sys.exit(app.exec_())
+       
+
+
+
+
+
+        
+
+
     except KeyboardInterrupt:
         pass
 

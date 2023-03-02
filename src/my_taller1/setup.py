@@ -22,7 +22,10 @@ setup(
         'console_scripts': [
             'nodo1 = my_taller1.nodo1:main',
             'keyboard_teleop_hold=my_taller1.keyboard_teleop_hold:main',
-            'position=my_taller1.position_widget:main'
+            'position=my_taller1.position_widget:main',
+            'service_player=my_taller1.Player:main',
+            'client_player=my_taller1.publishPlayer:main'
+
         ],
     },
 )

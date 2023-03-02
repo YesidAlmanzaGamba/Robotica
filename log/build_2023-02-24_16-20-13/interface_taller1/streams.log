@@ -1,0 +1,170 @@
+[0.040s] Invoking command in '/home/yesid/Robotica/build/interface_taller1': CMAKE_PREFIX_PATH=/home/yesid/Robotica/install/taller1:/home/yesid/Robotica/install/my_taller1:/opt/ros/humble /usr/bin/cmake /home/yesid/Robotica/src/interface_taller1 -DCMAKE_INSTALL_PREFIX=/home/yesid/Robotica/install/interface_taller1
+[0.351s] [33mCMake Warning (dev) in CMakeLists.txt:
+[0.352s]   No project() command is present.  The top-level CMakeLists.txt file must
+[0.352s]   contain a literal, direct call to the project() command.  Add a line of
+[0.352s]   code such as
+[0.352s] 
+[0.352s]     project(ProjectName)
+[0.352s] 
+[0.352s]   near the top of the file, but after cmake_minimum_required().
+[0.352s] 
+[0.353s]   CMake is pretending there is a "project(Project)" command on the first
+[0.353s]   line.
+[0.353s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.353s] [0m
+[0.353s] -- The C compiler identification is GNU 11.3.0
+[0.353s] -- The CXX compiler identification is GNU 11.3.0
+[0.353s] -- Detecting C compiler ABI info
+[0.353s] -- Detecting C compiler ABI info - done
+[0.353s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.353s] -- Detecting C compile features
+[0.353s] -- Detecting C compile features - done
+[0.353s] -- Detecting CXX compiler ABI info
+[0.354s] -- Detecting CXX compiler ABI info - done
+[0.354s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.354s] -- Detecting CXX compile features
+[0.354s] -- Detecting CXX compile features - done
+[0.354s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.511s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[0.588s] [33mCMake Warning (dev) at /opt/ros/humble/share/ament_cmake_core/cmake/core/normalize_path.cmake:52 (while):
+[0.588s]   had incorrect arguments:
+[0.588s] 
+[0.588s]     "TRUE"
+[0.588s] 
+[0.588s]   An argument named "TRUE" appears in a conditional statement.  Policy
+[0.588s]   CMP0012 is not set: if() recognizes numbers and boolean constants.  Run
+[0.588s]   "cmake --help-policy CMP0012" for policy details.  Use the cmake_policy
+[0.588s]   command to set the policy and suppress this warning.
+[0.588s] Call Stack (most recent call first):
+[0.588s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/normalize_path.cmake:34 (_normalize_path__collapse_redundant)
+[0.588s]   /opt/ros/humble/share/builtin_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake:13 (normalize_path)
+[0.589s]   /opt/ros/humble/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)
+[0.589s]   /opt/ros/humble/share/std_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[0.589s]   /opt/ros/humble/share/std_msgs/cmake/std_msgsConfig.cmake:41 (include)
+[0.589s]   /opt/ros/humble/share/geometry_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[0.589s]   /opt/ros/humble/share/geometry_msgs/cmake/geometry_msgsConfig.cmake:41 (include)
+[0.589s]   CMakeLists.txt:1 (find_package)
+[0.589s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.589s] [0m
+[0.589s] [33mCMake Warning (dev) at /opt/ros/humble/share/ament_cmake_core/cmake/core/normalize_path.cmake:72 (while):
+[0.589s]   had incorrect arguments:
+[0.589s] 
+[0.589s]     "TRUE"
+[0.589s] 
+[0.589s]   An argument named "TRUE" appears in a conditional statement.  Policy
+[0.589s]   CMP0012 is not set: if() recognizes numbers and boolean constants.  Run
+[0.589s]   "cmake --help-policy CMP0012" for policy details.  Use the cmake_policy
+[0.589s]   command to set the policy and suppress this warning.
+[0.589s] Call Stack (most recent call first):
+[0.590s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/normalize_path.cmake:35 (_normalize_path__collapse_uplevel_reference)
+[0.590s]   /opt/ros/humble/share/builtin_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake:13 (normalize_path)
+[0.590s]   /opt/ros/humble/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)
+[0.590s]   /opt/ros/humble/share/std_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[0.590s]   /opt/ros/humble/share/std_msgs/cmake/std_msgsConfig.cmake:41 (include)
+[0.590s]   /opt/ros/humble/share/geometry_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[0.590s]   /opt/ros/humble/share/geometry_msgs/cmake/geometry_msgsConfig.cmake:41 (include)
+[0.590s]   CMakeLists.txt:1 (find_package)
+[0.590s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.590s] [0m
+[0.597s] [33mCMake Warning (dev) at /opt/ros/humble/share/ament_cmake_core/cmake/core/normalize_path.cmake:52 (while):
+[0.597s]   had incorrect arguments:
+[0.597s] 
+[0.597s]     "TRUE"
+[0.597s] 
+[0.597s]   An argument named "TRUE" appears in a conditional statement.  Policy
+[0.597s]   CMP0012 is not set: if() recognizes numbers and boolean constants.  Run
+[0.597s]   "cmake --help-policy CMP0012" for policy details.  Use the cmake_policy
+[0.597s]   command to set the policy and suppress this warning.
+[0.597s] Call Stack (most recent call first):
+[0.598s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/normalize_path.cmake:34 (_normalize_path__collapse_redundant)
+[0.598s]   /opt/ros/humble/share/rcutils/cmake/ament_cmake_export_include_directories-extras.cmake:13 (normalize_path)
+[0.598s]   /opt/ros/humble/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+[0.598s]   /opt/ros/humble/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[0.598s]   /opt/ros/humble/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)
+[0.598s]   /opt/ros/humble/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[0.598s]   /opt/ros/humble/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)
+[0.598s]   /opt/ros/humble/share/std_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[0.598s]   /opt/ros/humble/share/std_msgs/cmake/std_msgsConfig.cmake:41 (include)
+[0.598s]   /opt/ros/humble/share/geometry_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[0.598s]   /opt/ros/humble/share/geometry_msgs/cmake/geometry_msgsConfig.cmake:41 (include)
+[0.599s]   CMakeLists.txt:1 (find_package)
+[0.599s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.599s] [0m
+[0.599s] [33mCMake Warning (dev) at /opt/ros/humble/share/ament_cmake_core/cmake/core/normalize_path.cmake:72 (while):
+[0.599s]   had incorrect arguments:
+[0.599s] 
+[0.599s]     "TRUE"
+[0.599s] 
+[0.599s]   An argument named "TRUE" appears in a conditional statement.  Policy
+[0.599s]   CMP0012 is not set: if() recognizes numbers and boolean constants.  Run
+[0.599s]   "cmake --help-policy CMP0012" for policy details.  Use the cmake_policy
+[0.599s]   command to set the policy and suppress this warning.
+[0.600s] Call Stack (most recent call first):
+[0.600s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/normalize_path.cmake:35 (_normalize_path__collapse_uplevel_reference)
+[0.600s]   /opt/ros/humble/share/rcutils/cmake/ament_cmake_export_include_directories-extras.cmake:13 (normalize_path)
+[0.600s]   /opt/ros/humble/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+[0.600s]   /opt/ros/humble/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[0.600s]   /opt/ros/humble/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)
+[0.600s]   /opt/ros/humble/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[0.600s]   /opt/ros/humble/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)
+[0.600s]   /opt/ros/humble/share/std_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[0.600s]   /opt/ros/humble/share/std_msgs/cmake/std_msgsConfig.cmake:41 (include)
+[0.600s]   /opt/ros/humble/share/geometry_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[0.600s]   /opt/ros/humble/share/geometry_msgs/cmake/geometry_msgsConfig.cmake:41 (include)
+[0.601s]   CMakeLists.txt:1 (find_package)
+[0.601s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.601s] [0m
+[0.634s] [33mCMake Warning (dev) at /opt/ros/humble/share/ament_cmake_core/cmake/core/list_append_unique.cmake:30 (if):
+[0.634s]   Policy CMP0057 is not set: Support new IN_LIST if() operator.  Run "cmake
+[0.634s]   --help-policy CMP0057" for policy details.  Use the cmake_policy command to
+[0.634s]   set the policy and suppress this warning.
+[0.634s] 
+[0.634s]   IN_LIST will be interpreted as an operator when the policy is set to NEW.
+[0.634s]   Since the policy is not set the OLD behavior will be used.
+[0.634s] Call Stack (most recent call first):
+[0.634s]   /opt/ros/humble/share/rcutils/cmake/ament_cmake_export_dependencies-extras.cmake:84 (list_append_unique)
+[0.635s]   /opt/ros/humble/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+[0.635s]   /opt/ros/humble/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[0.635s]   /opt/ros/humble/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)
+[0.635s]   /opt/ros/humble/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[0.635s]   /opt/ros/humble/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)
+[0.635s]   /opt/ros/humble/share/std_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[0.635s]   /opt/ros/humble/share/std_msgs/cmake/std_msgsConfig.cmake:41 (include)
+[0.635s]   /opt/ros/humble/share/geometry_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[0.635s]   /opt/ros/humble/share/geometry_msgs/cmake/geometry_msgsConfig.cmake:41 (include)
+[0.635s]   CMakeLists.txt:1 (find_package)
+[0.635s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.635s] [0m
+[0.636s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/list_append_unique.cmake:30 (if):
+[0.636s]   if given arguments:
+[0.636s] 
+[0.636s]     "NOT" "element" "IN_LIST" "rcutils_RECURSIVE_DEPENDENCIES"
+[0.636s] 
+[0.636s]   Unknown arguments specified
+[0.636s] Call Stack (most recent call first):
+[0.636s]   /opt/ros/humble/share/rcutils/cmake/ament_cmake_export_dependencies-extras.cmake:84 (list_append_unique)
+[0.636s]   /opt/ros/humble/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+[0.636s]   /opt/ros/humble/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[0.636s]   /opt/ros/humble/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)
+[0.637s]   /opt/ros/humble/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[0.637s]   /opt/ros/humble/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)
+[0.637s]   /opt/ros/humble/share/std_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[0.637s]   /opt/ros/humble/share/std_msgs/cmake/std_msgsConfig.cmake:41 (include)
+[0.637s]   /opt/ros/humble/share/geometry_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[0.637s]   /opt/ros/humble/share/geometry_msgs/cmake/geometry_msgsConfig.cmake:41 (include)
+[0.637s]   CMakeLists.txt:1 (find_package)
+[0.637s] 
+[0.637s] [0m
+[0.637s] [33mCMake Warning (dev) in CMakeLists.txt:
+[0.637s]   No cmake_minimum_required command is present.  A line of code such as
+[0.637s] 
+[0.637s]     cmake_minimum_required(VERSION 3.22)
+[0.638s] 
+[0.638s]   should be added at the top of the file.  The version specified may be lower
+[0.638s]   if you wish to support older CMake versions for this project.  For more
+[0.638s]   information run "cmake --help-policy CMP0000".
+[0.638s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.638s] [0m
+[0.638s] -- Configuring incomplete, errors occurred!
+[0.638s] See also "/home/yesid/Robotica/build/interface_taller1/CMakeFiles/CMakeOutput.log".
+[0.661s] Invoked command in '/home/yesid/Robotica/build/interface_taller1' returned '1': CMAKE_PREFIX_PATH=/home/yesid/Robotica/install/taller1:/home/yesid/Robotica/install/my_taller1:/opt/ros/humble /usr/bin/cmake /home/yesid/Robotica/src/interface_taller1 -DCMAKE_INSTALL_PREFIX=/home/yesid/Robotica/install/interface_taller1

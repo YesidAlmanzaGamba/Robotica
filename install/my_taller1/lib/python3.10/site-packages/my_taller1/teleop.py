@@ -6,8 +6,11 @@ from geometry_msgs.msg import Twist, TwistStamped
 from rclpy.node import Node
 from rclpy.qos import qos_profile_system_default
 
+import io
+
 
 class Teleop(Node, ABC):
+
     def __init__(self):
         atexit.register(self._emergency_stop)
         Node.__init__(self, "keyboard_teleop")
@@ -48,11 +51,21 @@ class Teleop(Node, ABC):
         self.linear = 0.0
         self.angular = 0.0
 
+        self.ruta=None
+        self.file=None
+
+        self.text=""
+
     @abstractmethod
     def update_twist(self, *args):
         pass
 
-    def write_twist(self, linear=None, angular=None):
+    def set_ruta(self, ruta):
+        self.ruta = ruta
+
+        
+
+    def write_twist(self, linear=None, angular=None,ruta=None):
         if linear is not None:
             if abs(linear) <= self.LINEAR_MAX:
                 self.linear = linear
@@ -67,6 +80,9 @@ class Teleop(Node, ABC):
                 self.get_logger().error(
                     f"Trying to set a angular speed {angular} outside of allowed range of [{-self.ANGULAR_MAX}, {self.ANGULAR_MAX}]"
                 )
+
+        if ruta is not None:
+            self.ruta = ruta
         self._update_screen()
 
     def _make_twist_unstamped(self, linear, angular):
@@ -86,8 +102,22 @@ class Teleop(Node, ABC):
         twist = self._make_twist(self.linear, self.angular)
         self.publisher_.publish(twist)
 
+        #print("ruta teleop: ",self.ruta)
+
+        if self.ruta is not None:
+            print(self.text)
+            self.text+=f"{self.linear:.2f} {self.angular:.2f}\n"
+
+
+
+
+    def get_text(self):
+        return self.text
     def _update_screen(self):
         sys.stdout.write(f"Linear: {self.linear:.2f}, Angular: {self.angular:.2f}\r")
+        
+       
+
 
     def _emergency_stop(self):
         self.publisher_.publish(self._make_twist(0.0, 0.0))

@@ -1,0 +1,20 @@
+running egg_info
+writing ../../build/taller1/taller1.egg-info/PKG-INFO
+writing dependency_links to ../../build/taller1/taller1.egg-info/dependency_links.txt
+writing entry points to ../../build/taller1/taller1.egg-info/entry_points.txt
+writing requirements to ../../build/taller1/taller1.egg-info/requires.txt
+writing top-level names to ../../build/taller1/taller1.egg-info/top_level.txt
+reading manifest file '../../build/taller1/taller1.egg-info/SOURCES.txt'
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+writing manifest file '../../build/taller1/taller1.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/yesid/Robotica/install/taller1/lib/python3.10/site-packages/taller1-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/taller1/taller1.egg-info to /home/yesid/Robotica/install/taller1/lib/python3.10/site-packages/taller1-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/yesid/Robotica/build/taller1/install.log'
